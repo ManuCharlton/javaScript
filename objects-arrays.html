@@ -42,6 +42,14 @@
 
     ];
 
-    document.getElementById("manu").document.write =
-            cars.company + " " + cars.year;
+    cars.forEach(function (cars,cars_key){
+        document.write(cars.company);
+        document.write('<br/>');
+
+        cars.colors.forEach(function (colors_value,key) {
+            document.write(colors_value);
+            document.write('<br/>');
+        });
+        document.write('<br/>');
+    } );
 </script>
