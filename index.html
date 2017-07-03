@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>java refresh</title>
+    <script src="jquery/jquery-3.2.1.min%20(1).js"></script>
+</head>
+<body>
+
+
+<p>Manu</p>
+
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+</body>
+</html>
+<script type="text/javascript">
+   var name = 'Clint';
+    var age = 3;
+    document.write(name);
+
+
+     var fruit = ['bananas','apples','figs','apples'];
+     fruit.push('grapes');
+     fruit.push('mangoes');
+     fruit.push('carrots');
+     fruit.push('tomatoes');
+     fruit.push('oranges');
+     fruit.push('naarjie');
+
+     fruit.forEach(function (key,value) {
+
+         if(value == 'mangoes')
+         {
+             document.write(value + 'are delicious');
+
+         }else if (value == 'carrots'){
+             document.write(value + 'are disgusting');
+         }
+
+     });
+
+     function showFruit(key,value){
+         document.write('the key is' + key + 'and value is' +value);
+     }
+
+    console.log(fruit);
+
+    fruit.push('pears');
+
+    console.log(fruit);
+
+    for(i=0; i < fruit.length; i++){
+
+        document.write(fruit[i]);
+
+    }
+
+</script>
